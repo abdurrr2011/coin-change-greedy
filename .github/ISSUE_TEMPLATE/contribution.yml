@@ -1,0 +1,24 @@
+name: Contribution proposal
+description: Suggest a focused improvement or discuss an algorithm change.
+title: "[Proposal]: "
+body:
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Explain who it helps and what files you expect to change.
+    validations:
+      required: true
+  - type: textarea
+    id: checks
+    attributes:
+      label: How will you verify it?
+      description: Describe examples, tests, or documentation checks.
+    validations:
+      required: true
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Main code
+      options:
+        - label: My proposal changes exchange.py and needs maintainer discussion first.
